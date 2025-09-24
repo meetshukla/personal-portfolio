@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin, Twitter, MapPin, Download, Phone } from "lucide-react";
+import { Github, Mail, Linkedin, Twitter, MapPin, Phone } from "lucide-react";
 import { getProfileData } from "@/lib/content";
 
 export function Hero() {
@@ -34,17 +34,6 @@ export function Hero() {
         </div>
 
         <div className="flex gap-4 justify-center md:justify-start">
-          {profile.resume && (
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
-            >
-              <Download className="h-4 w-4" />
-              Download Resume
-            </a>
-          )}
           <a
             href={profile.github}
             target="_blank"
