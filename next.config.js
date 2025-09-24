@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Update this with your GitHub repo name for GitHub Pages
   basePath: process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/personal-portfolio/' : '',

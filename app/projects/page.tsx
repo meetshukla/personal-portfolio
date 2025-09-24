@@ -56,24 +56,28 @@ export default function ProjectsPage() {
               </div>
               
               <div className="flex gap-4 text-sm">
-                <Link
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <Github className="h-3 w-3" />
-                  Code
-                </Link>
-                <Link
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <ExternalLink className="h-3 w-3" />
-                  Live
-                </Link>
+                {project.githubUrl && (
+                  <Link
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Github className="h-3 w-3" />
+                    Code
+                  </Link>
+                )}
+                {project.liveUrl && (
+                  <Link
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <ExternalLink className="h-3 w-3" />
+                    Live
+                  </Link>
+                )}
               </div>
             </div>
           ))}
