@@ -81,8 +81,9 @@ export interface ProjectItem {
   title: string
   description: string
   technologies: string[]
-  githubUrl: string
-  liveUrl: string
+  githubUrl?: string
+  liveUrl?: string
+  blogUrl?: string
   image?: string
 }
 

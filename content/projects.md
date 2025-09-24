@@ -20,7 +20,8 @@ projects:
         "Supabase",
         "Composio",
       ]
-    githubUrl: "https://github.com/meetshukla/personal-assistant"
+    githubUrl: "https://github.com/meetshukla/whatsapp-agent/tree/main/personal-assistant"
+    blogUrl: "/blog/building-an-intelligent-personal-assistant"
     image: "/projects/ai-assistant.jpg"
   - title: "AWS Image Moderation System"
     description: "Built a serverless cloud moderation platform to extract and evaluate uploaded media using AWS Textract and Rekognition, with alert workflows powered by SQS and SNS for real-time delivery."

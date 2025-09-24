@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, FileText } from "lucide-react"
 import Link from "next/link"
 import { getProjectsData } from "@/lib/content"
 
@@ -76,6 +76,15 @@ export default function ProjectsPage() {
                   >
                     <ExternalLink className="h-3 w-3" />
                     Live
+                  </Link>
+                )}
+                {project.blogUrl && (
+                  <Link
+                    href={project.blogUrl}
+                    className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <FileText className="h-3 w-3" />
+                    Blog
                   </Link>
                 )}
               </div>
