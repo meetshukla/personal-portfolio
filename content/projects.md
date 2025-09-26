@@ -20,7 +20,7 @@ projects:
         "Supabase",
         "Composio",
       ]
-    githubUrl: "https://github.com/meetshukla/whatsapp-agent/tree/main/personal-assistant"
+    githubUrl: "https://github.com/meetshukla/personal-assistant"
     blogUrl: "/blog/building-an-intelligent-personal-assistant"
     image: "/projects/ai-assistant.jpg"
   - title: "AWS Image Moderation System"
