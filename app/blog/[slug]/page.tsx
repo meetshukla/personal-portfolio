@@ -112,7 +112,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </header>
 
         {/* Article Content - Server-rendered for SEO */}
-        <article className="prose prose-gray dark:prose-invert max-w-none prose-base prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-code:text-primary prose-blockquote:text-muted-foreground prose-blockquote:border-l-primary prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+        <article className="prose prose-gray dark:prose-invert max-w-none prose-base prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-code:text-primary prose-blockquote:text-muted-foreground prose-blockquote:border-l-primary prose-a:text-primary">
           <MDXRemote source={post.content} components={components} />
         </article>
 

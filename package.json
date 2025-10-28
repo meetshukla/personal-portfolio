@@ -22,6 +22,7 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-tweet": "^3.2.2",
     "reading-time": "^1.5.0",
     "tailwind-merge": "^2.6.0"
   },

@@ -1,18 +1,26 @@
-import type { MDXComponents } from 'mdx/types'
+import type { MDXComponents } from "mdx/types";
+import { Tweet } from "react-tweet";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    Tweet,
     h1: ({ children }) => (
       <h1 className="text-4xl font-bold mb-6 text-foreground">{children}</h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-3xl font-semibold mb-4 mt-8 text-foreground">{children}</h2>
+      <h2 className="text-3xl font-semibold mb-4 mt-8 text-foreground">
+        {children}
+      </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-2xl font-semibold mb-3 mt-6 text-foreground">{children}</h3>
+      <h3 className="text-2xl font-semibold mb-3 mt-6 text-foreground">
+        {children}
+      </h3>
     ),
     h4: ({ children }) => (
-      <h4 className="text-xl font-semibold mb-2 mt-4 text-foreground">{children}</h4>
+      <h4 className="text-xl font-semibold mb-2 mt-4 text-foreground">
+        {children}
+      </h4>
     ),
     p: ({ children }) => (
       <p className="mb-4 leading-relaxed text-foreground">{children}</p>
@@ -20,9 +28,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ href, children }) => (
       <a
         href={href}
-        className="text-primary hover:underline transition-colors"
-        target={href?.startsWith('http') ? '_blank' : undefined}
-        rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+        style={{ textDecoration: "underline" }}
+        className="text-primary transition-colors"
+        target={href?.startsWith("http") ? "_blank" : undefined}
+        rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
       >
         {children}
       </a>
@@ -81,5 +90,5 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <td className="border border-border px-4 py-2">{children}</td>
     ),
     ...components,
-  }
+  };
 }
